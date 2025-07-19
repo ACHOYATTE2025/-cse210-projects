@@ -5,23 +5,31 @@ public class Scripture
   //attribute
   private Reference _reference;
   private List<Word> _word;
+    private int _countDoc;
 
   //constructors
-  public Scripture(Reference reference, string text)
-  {
-    this._reference = reference;
-    this._word = new List<Word>();
+    public Scripture(Reference reference, string text)
+    {
+        this._reference = reference;
+        this._word = new List<Word>();
 
         string[] words = text.Split(' ');
         foreach (string w in words)
         {
             _word.Add(new Word(w));
         }
-  }
+    }
+
+    //getters 
+
+    public int getCounDoc()
+    {
+        return this._countDoc;
+    }
 
   //methods
-  public void HideRandomWords(int numberToHide)
-  {
+    public void HideRandomWords(int numberToHide)
+    {
         Random rand = new Random();
         int hiddenCount = 0;
 
@@ -33,9 +41,9 @@ public class Scripture
             int index = rand.Next(visibleWords.Count);
             visibleWords[index].Hide();
             visibleWords.RemoveAt(index);
-            hiddenCount++;
+            _countDoc += hiddenCount++;
         }
-   }
+    }
   public string GetDisplayText()
   { 
      string text = _reference.GetDisplayText() + " ";

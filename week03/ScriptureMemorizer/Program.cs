@@ -20,7 +20,7 @@ class Program
             
             if (scripture.isCompletelyHidden()){
                 Console.WriteLine("\n🎉 All the words are now hidden. Congratulations on memorizing!");
-                Console.WriteLine(":");
+                Console.WriteLine($"Numbers of keyboard pressed : {scripture.getCounDoc()/3}");
                 break;
             }
             if (answer != "quit")
