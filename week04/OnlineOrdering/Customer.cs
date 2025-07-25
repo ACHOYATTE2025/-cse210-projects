@@ -5,7 +5,7 @@ public class Customer
   private Address _address;
 
   //constructors
-  public Customer() { }
+  public Customer() {}
 
   public Customer(string name, Address address)
   {

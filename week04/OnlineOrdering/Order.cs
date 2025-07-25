@@ -24,6 +24,10 @@ public class Order
 
 
   //getters & Setters
+  public double getTotalCost()
+  {
+    return this._totalCost;
+  }
 
   //methods
   public void totalCostOrder()
@@ -44,7 +48,7 @@ public class Order
       this._shipment = 35;
     }
     this._totalCost = this._costProducts + this._shipment;
-    Console.WriteLine($"Total Price : {this._totalCost} $ ");
+    Console.WriteLine($"Total Price : {this.getTotalCost()} $ ");
     Console.WriteLine("\n");
   }
 

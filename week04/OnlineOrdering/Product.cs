@@ -20,29 +20,7 @@ public class Product
 
 
   //getters & setters
-
-  public void setProductId(int id)
-  {
-    this._productId = id;
-  }
-
-  public void setName(string name)
-  {
-    this._name = name;
-  }
-
-  public void setPrice( double price)
-  {
-    this._price = price;
-  }
-
-  public void setQuantity(int quantity)
-  {
-    this._quantity = quantity;
-  }
-
-
-   public double getProductId()
+  public double getProductId()
   {
     return this._productId;
   }
@@ -52,7 +30,7 @@ public class Product
     return this._price;
   }
 
-   public int getQuantity()
+  public int getQuantity()
   {
     return this._quantity;
   }
