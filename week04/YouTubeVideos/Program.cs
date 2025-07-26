@@ -30,7 +30,7 @@ class Program
         {
             Console.WriteLine($"Tile: {item.getTitle()}");
             Console.WriteLine($"Author: {item.getAuthor()}");
-            Console.WriteLine($"Length: {item.getLength()}");
+            Console.WriteLine($"Length: {item.getLength()} seconds");
             Console.WriteLine($"Comment's Number: {item.getNumberOfComment()}");
 
             foreach (var items in item.getComments())
