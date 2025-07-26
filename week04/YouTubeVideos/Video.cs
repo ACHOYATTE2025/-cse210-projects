@@ -11,11 +11,12 @@ public class Video{
   //constructor
   public Video(){}
 
-  public Video(string title, string author, int lens)
+  public Video(string title, string author, int lens, List<Comment> comments)
   {
     this._title = title;
     this._author = author;
     this._length = lens;
+    this._comments = comments;
   
   }
 

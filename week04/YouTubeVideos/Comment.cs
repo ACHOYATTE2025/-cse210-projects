@@ -3,7 +3,7 @@ public class Comment{
   //attributes
   private string _name;
   private string _text;
-  private int _rate;
+ 
  
 
 
@@ -20,23 +20,11 @@ public class Comment{
     return this._name;
   }
 
-  public int  getRate(){
-    return this._rate;
-  }
-
-  public void setRate(int value){
-     this._rate=value;
-  }
 
   public string getText() {
     return this._text;
   }
   
-//methods
- public string getStarsFromRate()
-{
-    return new string('*', _rate);
-}
 
 
 }
