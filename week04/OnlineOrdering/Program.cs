@@ -28,12 +28,19 @@ class Program
         address.SetCountry("USA");
         address.setStateOrProvince("Washington");
 
-        Customer customer = new Customer("Abel", address);
-        Order order = new Order(products, customer);
+        Customer customer1 = new Customer("AURIEL", address);
+        Customer customer2 = new Customer("ABEL", address);
+        Order order1 = new Order(products, customer1);
+        Order order2 = new Order(products, customer2);
 
-        order.totalCostOrder();
-        order.labelPacking();
-        order.shippinglabel();
+
+        order1.totalCostOrder();
+        order1.labelPacking();
+        order1.shippinglabel();
+        Console.WriteLine("====================================================");
+        order2.totalCostOrder();
+        order2.labelPacking();
+        order2.shippinglabel();
         
         
     }
