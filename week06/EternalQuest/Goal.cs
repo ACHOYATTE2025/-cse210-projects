@@ -1,3 +1,5 @@
+using System.Reflection.Metadata.Ecma335;
+
 public class Goal
 {
   private string _shortName;
@@ -47,9 +49,9 @@ public string getShortName()
     return this._points;
   }
 
-  public virtual void RecordEvent();
-  public virtual bool IsCompleted();
-  public virtual string GetDetailsString() ;
-  public virtual string GetStringRepresentation();
+  public virtual void RecordEvent() {}
+  public virtual bool IsCompleted(){ return false; }
+  public virtual string GetDetailsString(){ return ""; } 
+  public virtual string GetStringRepresentation(){return "";}
   
 }
