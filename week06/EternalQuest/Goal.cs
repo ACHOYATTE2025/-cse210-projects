@@ -47,9 +47,9 @@ public string getShortName()
     return this._points;
   }
 
-  public virtual void RecordEvent() { }
-  public virtual bool IsCompleted() { return false; }
-  public virtual string GetDetailsString() { return ""; }
-  public virtual string GetStringRepresentation() { return ""; }
+  public virtual void RecordEvent();
+  public virtual bool IsCompleted();
+  public virtual string GetDetailsString() ;
+  public virtual string GetStringRepresentation();
   
 }

@@ -90,8 +90,21 @@ public void start()
             }
         }
     }
-    public void DisplayPlayerInfo() { }
-    public void ListGoalNames() { }
+    
+    //show score
+    public void DisplayPlayerInfo()
+    {
+        Console.WriteLine($"\nYou have {this.getScore()} points\n");
+    }
+
+
+//show list of goals
+    public void ListGoalNames()
+    {
+        Console.WriteLine("1. Simple Goal");
+        Console.WriteLine("2. Eternel Goal");
+        Console.WriteLine("3. CheckList Goal");
+    }
     
     //list and show details of differents goals
     public void ListGoalDetails()
@@ -125,7 +138,7 @@ public void start()
             Console.WriteLine();
         }
 
-        Console.WriteLine($"\nYou have {this.getScore()} points\n");
+        DisplayPlayerInfo();
     }
     
     //create a goal
@@ -138,9 +151,7 @@ public void start()
         while (!whiled)
         {
             Console.WriteLine("The Type of Goals are:");
-            Console.WriteLine("1. Simple Goal");
-            Console.WriteLine("2. Eternel Goal");
-            Console.WriteLine("3. CheckList Goal");
+            ListGoalNames();
 
 
             try
@@ -171,7 +182,7 @@ public void start()
 
                     whiled = true;
                     Console.WriteLine("\n");
-                    Console.WriteLine($"You have {this.getScore()} point");
+                    DisplayPlayerInfo();
                     Console.WriteLine("\n");
                     break;
                 case 2:
@@ -184,7 +195,7 @@ public void start()
                     _goals.Add(new EternelGoal(namei, descripti, pointi));
                     whiled = true;
                     Console.WriteLine("\n");
-                    Console.WriteLine($"You have {this.getScore()} point");
+                    DisplayPlayerInfo();
                     Console.WriteLine("\n");
                     ;
                     break;
@@ -202,7 +213,7 @@ public void start()
                     _goals.Add(new CheckListGoal(names, descriptis, pointis,bonusx,targetx));
                     whiled = true;
                     Console.WriteLine("\n");
-                    Console.WriteLine($"You have {this.getScore()} point");
+                    DisplayPlayerInfo();
                     Console.WriteLine("\n");
                     break;
                 case 4:
@@ -344,7 +355,7 @@ public void start()
                 else
                 {
                     // fallback
-                    goal = new Goal(name, desc, points);
+                    goal = null;
                 }
 
                 _goals.Add(goal);
