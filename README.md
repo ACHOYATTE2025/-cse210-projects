@@ -43,13 +43,14 @@ Projets phares
 
 Voici quelques projets que je considère particulièrement représentatifs de mes compétences :
 
-[Eteenal Quest] : projet permettant de définir un ensemble de quêtes personnelles
+[Eternal Quest] : projet permettant de définir un ensemble de quêtes personnelles
 Les techniques utilisées : l'héritage,le polymorphisme, défis l'application du principe SOLID et la sauvegarde des informations.
 et solutions apportées ont permi de rendre le code foncionnel et maintenable.
 
-[Nom du projet 2] : Idem.
+[Mindfulness] : Projet permettant de définir des objectifs à une personne.
+techniques utilisées , SOLID, héritage.
 
-[Nom du projet 3] : Idem.
+
 
 
 Technologies et outils
